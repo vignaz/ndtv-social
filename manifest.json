@@ -1,0 +1,28 @@
+{
+  "manifest_version": 2,
+  "name": "NDTV Social",
+  "description": "Quick Peek on NDTV Social News",
+  "version": "1.5",
+  "icons": { "128": "icon.png" },
+  "background": {
+    "scripts": ["background.js", "jquery.js"]
+  },
+  "page_action": {
+    "default_popup": "display.html",
+    "default_title": "NDTV Social Peek"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://ndtv.com/*", "*://*.ndtv.com/*"],
+      "js": ["app.js"]
+    }
+  ],
+  "permissions": [
+    "webRequest",
+    "webRequestBlocking",
+    "tabs",
+    "storage",
+    "notifications",
+    "<all_urls>"
+  ]
+}

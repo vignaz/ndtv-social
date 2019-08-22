@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <title>Social Peek</title>
+    <style>
+      body {
+        min-height: 350px;
+        max-width: 275px;
+        font-size: 75%;
+        padding: 10px;
+      }
+      #data * {
+        margin: 0 !important;
+      }
+      #news-img {
+        padding: 5px 20px;
+      }
+      .card {
+        border-color: red;
+      }
+    </style>
+    <script src="jquery.js"></script>
+    <script src="display.js"></script>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <h6><span class="text-danger">NDTV</span> Social Quick Peek</h6>
+        <hr />
+        <div class="card mb-3 col-xs-12" id="newsCard">
+          <div class="row">
+            <div class="col-xs-4">
+              <img id="news-img" class="card-img img-responsive" alt="..." />
+            </div>
+            <div class="col-xs-8">
+              <div class="card-body">
+                <h6 class="card-title" id="news-hdl"></h6>
+                <p class="card-text text-capitalize" id="news-sec"></p>
+                <p class="card-text">
+                  <small class="text-muted" id="news-aut"></small>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="data">
+          <strong>HDL</strong>
+          <p id="hdl"></p>
+          <hr />
+          <strong>SEC</strong>
+          <p id="sec"></p>
+          <hr />
+          <strong>AUT</strong>
+          <p id="aut"></p>
+          <hr />
+          <strong>IMG</strong>
+          <p id="img"></p>
+          <hr />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
